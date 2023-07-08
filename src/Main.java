@@ -6,5 +6,3 @@ public class Main {
         newHt.findPairsOfLitera(inputArr);
     }
 }
-
-//"abacab","мама", "тато", "їж їжак желе","hi","нан","рарара","папа","та","бабак","арра"
