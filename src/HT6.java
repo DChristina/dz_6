@@ -8,7 +8,7 @@ public class HT6 {
         HashSet<Character> resultList = new HashSet<Character>(  );
 
         for (int i = 0; i<arr.length; i++){
-            if (arr[i].length()>2){
+            if (arr[i].length()>2 && arr[i].length()%2==0) {
 
                 HashSet<Integer> contCharactrs = new HashSet<Integer>(  );
                 char[] charArray = arr[i].toCharArray();
@@ -30,7 +30,7 @@ public class HT6 {
                     contCharactrs.add(counter);
                 }
 
-                if (contCharactrs.size()==1 && pairedWords.size()<2){
+                if (charsList.size()>1 && contCharactrs.size()==1 && pairedWords.size()<2){
                     pairedWords.add(arr[i]);
                 }
             }
