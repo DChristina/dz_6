@@ -30,16 +30,17 @@ public class HT6 {
                     }
                     countCharactrs.add(counter);
                 }
-                boolean allCharactersApearsEvenNumberOfTimes = false;
+                HashSet<Boolean> allCharactersApearsEvenNumberOfTimes = new HashSet<Boolean>(  );;
+
                 for (Integer p: countCharactrs){
                     if (p%2==0){
-                        allCharactersApearsEvenNumberOfTimes  = true;
+                        allCharactersApearsEvenNumberOfTimes.add(true);
                     } else {
-                        break;
+                        allCharactersApearsEvenNumberOfTimes.add(false);
                     }
                 }
 
-                if (charsList.size()>=1 && allCharactersApearsEvenNumberOfTimes && pairedWords.size()<2 ){
+                if (charsList.size()>=1 && allCharactersApearsEvenNumberOfTimes.size()==1 && allCharactersApearsEvenNumberOfTimes.contains(true) && pairedWords.size()<2 ){
                     pairedWords.add(arr[i]);
                 }
             }
